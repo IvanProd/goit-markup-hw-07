@@ -4,11 +4,11 @@ $Roboto: 'Roboto', sans-serif;
 $Raleway: 'Raleway', sans-serif;
 
 /*общее*/
-$acent-color: #2196F3;/*использует logo; hover; focus; hero-bottom */
-
+$accent-color: #2196F3;/*использует logo; hover; focus; hero-bottom */
+$change-algorithm: cubic-bezier(0.4, 0, 0.2, 1);
 /*шапка*/
 $logo-color: #000000;
-$logo-acent-color: #2196F3;
+$logo-accent-color: #2196F3;
 $navigation-color-link: #212121;
 $navigation-color: #212121;
 $contact-link: #757575;

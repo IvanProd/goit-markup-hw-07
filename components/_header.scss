@@ -4,6 +4,8 @@
     margin: 0 auto 0;
     padding: 0 215px 0;
     border-bottom: $border-line;
+
+    overflow: hidden;
 }
 
 .header__conteiner {
@@ -30,7 +32,7 @@
     letter-spacing: 0.03em;
 }
 .logo__left {
-    color: $logo-acent-color;
+    color: $logo-accent-color;
 }
 .logo__right {
 }
@@ -65,4 +67,100 @@
     text-decoration: none;
 
     color: $navigation-color-link;
+
+    &:hover {
+        color: $accent-color;
+
+        transition: color 250ms $change-algorithm;
+    }
+    &:focus{
+        color: $accent-color;
+        outline: none;
+
+        transition: color 250ms $change-algorithm;
+    }
+}
+.navigation__link--accent {
+    color: $accent-color;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        
+        transform: translateY(1px);
+    }
+    &::after:hover {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        
+        transform: translateY(1px);
+    }
+}
+.navigation__link--underline {
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        
+        transform: translateY(1px) scaleX(0);
+        transition: transform 250ms $change-algorithm;
+    }
+    &:hover::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        
+        transform: translateY(1px) scaleX(1);
+        transition: transform 250ms $change-algorithm;
+    }
+    &:focus::after{
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        
+        transform: translateY(1px) scaleX(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
