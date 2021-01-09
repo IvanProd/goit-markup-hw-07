@@ -1,0 +1,68 @@
+/*блок шапка*/
+.header {
+    max-width: 1600px;
+    margin: 0 auto 0;
+    padding: 0 215px 0;
+    border-bottom: $border-line;
+}
+
+.header__conteiner {
+    display: flex;
+    min-width: 1170px;
+    max-height: 80px;
+}
+/*блок логотипа*/
+.logo {
+    color: $logo-color;
+    width: 145px;
+    height: 31px;
+    text-decoration: none;
+
+    margin: 24px 93px 25px 0;
+
+    font-family: $Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+}
+.logo__left {
+    color: $logo-acent-color;
+}
+.logo__right {
+}
+/*навигация*/
+.navigation {
+    margin: 0 305px 0 0;
+}
+.navigation__list {
+    display: flex;
+    width: 294px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+}
+.navigation__item {
+    position: relative;
+    padding: 32px 0 32px 0;
+    
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+}
+.navigation__link {
+    display: block;
+    text-decoration: none;
+
+    color: $navigation-color-link;
+}
