@@ -1,44 +1,3 @@
-/*###ШАПКА###*/
-/*блок шапка*/
-.header {
-    max-width: 1600px;
-    margin: 0 auto 0;
-    padding: 0 215px 0;
-    border-bottom: $border-line;
-
-    overflow: hidden;
-}
-
-.header__conteiner {
-    display: flex;
-    min-width: 1170px;
-    max-height: 80px;
-}
-
-/*блок логотипа*/
-.logo {
-    color: $logo-color;
-    width: 145px;
-    height: 31px;
-    text-decoration: none;
-
-    margin: 24px 93px 25px 0;
-
-    font-family: $Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
-    /* identical to box height */
-
-    letter-spacing: 0.03em;
-}
-.logo__left {
-    color: $logo-accent-color;
-}
-.logo__right {
-}
-
 /*блок навигация*/
 .navigation {
     margin: 0 305px 0 0;
@@ -88,6 +47,7 @@
         transition: color 250ms $change-algorithm;
     }
 }
+/*ссылка текущей страницы*/
 .navigation__link--accent {
     color: $accent-color;
 
@@ -230,7 +190,3 @@
 
     fill: currentColor;
 }
-
-/*###ОСНОВНОЙ КОНТЕНТ###*/
-
-/**/

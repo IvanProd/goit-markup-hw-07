@@ -1,0 +1,89 @@
+/*###ОСНОВНОЙ КОНТЕНТ###*/
+
+/*Секция герой*/
+.hero {
+    min-height: 600px;
+    margin: 0 auto 0;
+    /*padding: 0 215px 0;*/
+    /*overflow: hidden;*/
+}
+/* контейнер герой*/
+.hero__conteiner {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+
+    background-color: var(--hero-background-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero_background/background.jpg");
+}
+.hero__header {
+}
+/*скрытие загоровка*/
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*текст героя баннера*/
+.hero__text {
+    width: 696px;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    letter-spacing: 0.06em;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $hero-text-color;
+}
+/*Кнопка героя*/
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    width: 200px;
+    min-height: 50px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    background-color: $button-color;
+}
+.hero__button-text {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+
+    letter-spacing: 0.06em;
+
+    color: $button-text-color;
+}
