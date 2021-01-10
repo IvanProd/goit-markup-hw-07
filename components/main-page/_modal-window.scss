@@ -35,6 +35,21 @@
     background-color: $modal-background-color;
 
     border-radius: 4px;
+
+    .backdrop.is-hidden>& {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%) scale(0) perspective(500px) rotateY(90deg);
+        transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 40px;
+    
+        width: 528px;
+        height: 581px;
+        background-color: $hero-text-color;  
+    
+        border-radius: 4px;
+    }
 }
 /*кнопка закрытия окна*/
 .modal__round-button-close {
@@ -236,6 +251,7 @@
 
     color: $text-lable;
 }
+/*иконка чекбокса*/
 .form__checkbox-icon {
     position: absolute;
     top: 50%;
@@ -270,6 +286,7 @@
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+/*ссылка на условия контракта*/
 .form__checkbox-link {
     font-family: $Roboto;
     font-style: normal;
@@ -279,6 +296,7 @@
     /* identical to box height, or 171% */
 
     letter-spacing: 0.03em;
+    color: $accent-color;
 }
 /*кнопка формы*/
 .form__button {
