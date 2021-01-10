@@ -35,15 +35,9 @@
 
     color: $navigation-color-link;
 
-    &:hover {
-        color: $accent-color;
-
-        transition: color 250ms $change-algorithm;
-    }
-    &:focus{
+    &:hover,&:focus {
         color: $accent-color;
         outline: none;
-
         transition: color 250ms $change-algorithm;
     }
 }
@@ -99,7 +93,7 @@
         transform: translateY(1px) scaleX(0);
         transition: transform 250ms $change-algorithm;
     }
-    &:hover::after {
+    &:hover::after,&:focus::after {
         content: "";
 
         position: absolute;
@@ -114,22 +108,6 @@
         
         transform: translateY(1px) scaleX(1);
         transition: transform 250ms $change-algorithm;
-    }
-    &:focus::after{
-        content: "";
-
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: $accent-color;
-        border-radius: 2px;
-        
-        transform: translateY(1px) scaleX(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -158,12 +136,7 @@
 
     transition: color 250ms $change-algorithm;
 
-    &:hover {
-        color: $accent-color;
-        outline: none;
-        transition: color 250ms $change-algorithm;
-    }
-    &:focus {
+    &:hover,&:focus {
         color: $accent-color;
         outline: none;
         transition: color 250ms $change-algorithm;
