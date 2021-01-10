@@ -51,11 +51,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $buttom-close-border-color-focus;
+        border-radius: 50%;
+        background-color: $button-close-background-color;
+
+    }
 }
 /*иконка кнопки закрытия окна*/
 .modal__close-icon {
     width: 12px;
     height: 12px;
+
+
+    .modal__round-button-close:hover > &,.modal__round-button-close:focus>& {
+        fill: $accent-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 /*шапка модального окна*/
 .modal__head {
@@ -69,6 +83,8 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: $modal-head-color;
+
+    margin: 0;
 }
 /*блок форма ввода*/
 .form {
@@ -106,6 +122,17 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        padding-left: 42px;
+    
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 /*иконка поля ввода*/
 .form__input-icon {
@@ -119,11 +146,30 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form__input:focus~& {
+        fill: $input-focus-icon-color;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 /*элемент формы для комментария*/
 .form__commits {
     width: 448px;
     margin-top: 10px;
+
+    &::placeholder {
+        font-family: $Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.01em;
+    
+        color: $commits-placeholder;
+    }
 }
 /*поле ввода коментария*/
 .form__area-commits {
@@ -138,6 +184,21 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        width: 448px;
+        height: 120px;
+        resize: none;
+        padding: 12px 16px;
+        margin-top: 4px;
+        border-radius: 4px;
+        border: 1px solid $accent-color;
+        outline: none;
+    
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 /*чекбокс*/
 .form__checkbox {
@@ -199,4 +260,56 @@
     /* identical to box height, or 171% */
 
     letter-spacing: 0.03em;
+}
+/*кнопка формы*/
+.form__button {
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    padding: 0;
+   
+    border: 0;
+    border-radius: 4px;
+    background-color: $modal-button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        display: flex;
+        align-items: center;
+    
+        width: 200px;
+        height: 50px;
+        margin: 30px auto 0 auto;
+        padding: 0;
+        
+        border: 0;
+        border-radius: 4px;
+        background-color: $modal--button-hover;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+/*текст кнопки*/
+.form__button-text {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+
+    color: $portfolio-button-text-active-color;
 }

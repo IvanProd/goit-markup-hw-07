@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*Шрифты*/
 /*общее*/
-/*использует logo; hover; focus; hero-bottom */
 /*шапка*/
 /*герой*/
 /*особенности*/
@@ -387,10 +386,23 @@
           justify-content: center;
 }
 
+.modal__round-button-close:focus {
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 /*иконка кнопки закрытия окна*/
 .modal__close-icon {
   width: 12px;
   height: 12px;
+}
+
+.modal__round-button-close:hover > .modal__close-icon, .modal__round-button-close:focus > .modal__close-icon {
+  fill: #2196F3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*шапка модального окна*/
@@ -404,6 +416,7 @@
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
+  margin: 0;
 }
 
 /*блок форма ввода*/
@@ -447,6 +460,19 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__input:focus {
+  outline: none;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+  padding-left: 42px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*иконка поля ввода*/
 .form__input-icon {
   position: absolute;
@@ -463,10 +489,60 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__input:focus ~ .form__input-icon {
+  fill: #2196F3;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*элемент формы для комментария*/
 .form__commits {
   width: 448px;
   margin-top: 10px;
+}
+
+.form__commits::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__commits:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__commits::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form__commits::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 /*поле ввода коментария*/
@@ -478,6 +554,23 @@
   margin-top: 4px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__area-commits:focus {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #2196F3;
+  outline: none;
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: 250ms;
@@ -544,5 +637,66 @@
   line-height: 1.714;
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
+}
+
+/*кнопка формы*/
+.form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 30px auto 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__button:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 30px auto 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #188CE8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*текст кнопки*/
+.form__button-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
