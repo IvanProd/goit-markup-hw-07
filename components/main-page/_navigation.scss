@@ -39,12 +39,15 @@
         color: $accent-color;
         outline: none;
         transition: color 250ms $change-algorithm;
+
     }
 }
 /*ссылка текущей страницы*/
 .navigation__link--accent {
     color: $accent-color;
-
+    &:focus {
+        outline: 1px solid #000;
+    }
     &::after {
         content: "";
 

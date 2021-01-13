@@ -1,16 +1,18 @@
+
 /*###ШАПКА###*/
 /*блок шапка*/
 .header {
+    max-width: 1600px;
+    margin: 0 auto 0;
     overflow: hidden;
 }
 
 .header__conteiner {
     display: flex;
     min-width: 1170px;
-    max-width: 1600px;
+    max-height: 80px;
+    
     margin: 0 auto 0;
     padding: 0 215px 0;
     border-bottom: $border-line;
-
-    max-height: 80px;
 }
