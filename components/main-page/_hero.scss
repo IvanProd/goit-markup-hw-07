@@ -2,26 +2,23 @@
 
 /*Секция герой*/
 .hero {
+    max-width: 1600px;
     min-height: 600px;
-    margin: 0 auto 0;
-    /*padding: 0 215px 0;*/
-    /*overflow: hidden;*/
+    margin: 0 auto 0 auto;
 }
 /* контейнер герой*/
-.hero__conteiner {
-    max-width: 1600px;
+.hero__conteiner {    
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-
-
     background-color: var(--hero-background-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero_background/background.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero_background/background.jpg);
+    /*overflow: hidden;*/
 }
 .hero__header {
 }
