@@ -1,0 +1,107 @@
+/*секция постоянные клиенты*/
+.regular-customers {
+    max-width: 1600px;
+    margin: 0 auto 0 auto;
+}
+/*контейнер постоянные клиенты*/
+.regular-customers__conteiner {
+    width: 1200px;
+    height: 182px;
+    margin: 94px auto 94px auto;
+}
+/*шакпка секции*/
+.regular-customers__head {
+    margin: 0;
+    
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $heder-color;
+}
+/*список постоянных клиентов*/
+.regular-customers__list {
+    display: flex;
+    justify-content: center;
+
+    margin: 50px 0 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+/*элемент списка клиентов*/
+.regular-customers__item {
+    width: 170px;
+    height: 90px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+/*ссылка на клиента*/
+.regular-customer__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: $icon-link-color;
+    border: 1px solid;
+    border-radius: 4px;
+
+    text-decoration: none;
+    outline: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,&:focus {
+        color: $accent-color;
+        border: 1px solid;
+        border-radius: 4px;
+    
+        text-decoration: none;
+        outline: none;
+
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+}
+/*иконка логотипа клиента*/
+.regular-customers__icon {
+    fill: currentColor;
+    
+    &--logo-1 {
+        width: 45px;
+        height: 50px;
+    }
+    &--logo-2 {
+        width: 40px;
+        height: 52px;
+    }
+    &--logo-3 {
+        width: 41px;
+        height: 43px;
+    }
+    &--logo-4 {
+        width: 80px;
+        height: 42px;
+    }
+    &--logo-5 {
+        width: 59px;
+        height: 47px;
+    }
+    &--logo-6 {
+        width: 89px;
+        height: 46px;
+    }
+
+}

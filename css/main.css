@@ -260,6 +260,7 @@
 
 /* контейнер герой*/
 .hero__conteiner {
+  min-width: 1200px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -521,7 +522,7 @@
 
 /*оглавление секции*/
 .our-team__head {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -534,7 +535,7 @@
 
 /*контейнер наша команда*/
 .our-team__conteiner {
-  max-width: 1600px;
+  width: 1600px;
   min-height: 708px;
   margin: 94px auto 0 auto;
   padding-top: 94px;
@@ -663,6 +664,7 @@
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 /*иконка соцсети*/
@@ -670,6 +672,130 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+/*секция постоянные клиенты*/
+.regular-customers {
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+}
+
+/*контейнер постоянные клиенты*/
+.regular-customers__conteiner {
+  width: 1200px;
+  height: 182px;
+  margin: 94px auto 94px auto;
+}
+
+/*шакпка секции*/
+.regular-customers__head {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/*список постоянных клиентов*/
+.regular-customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*элемент списка клиентов*/
+.regular-customers__item {
+  width: 170px;
+  height: 90px;
+}
+
+.regular-customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*ссылка на клиента*/
+.regular-customer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 90px;
+  color: #AFB1B8;
+  border: 1px solid;
+  border-radius: 4px;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customer__link:hover, .regular-customer__link:focus {
+  color: #2196F3;
+  border: 1px solid;
+  border-radius: 4px;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*иконка логотипа клиента*/
+.regular-customers__icon {
+  fill: currentColor;
+}
+
+.regular-customers__icon--logo-1 {
+  width: 45px;
+  height: 50px;
+}
+
+.regular-customers__icon--logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.regular-customers__icon--logo-3 {
+  width: 41px;
+  height: 43px;
+}
+
+.regular-customers__icon--logo-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.regular-customers__icon--logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.regular-customers__icon--logo-6 {
+  width: 89px;
+  height: 46px;
 }
 
 /*Модальное окно*/
