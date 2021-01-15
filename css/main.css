@@ -33,7 +33,7 @@
   min-height: 80px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: var(--border-line);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header__conteiner {
@@ -65,6 +65,15 @@
   line-height: 1.192;
   /* identical to box height */
   letter-spacing: 0.03em;
+}
+
+.logo--footer {
+  color: #fff;
+}
+
+.logo--footer:focus {
+  text-decoration: underline;
+  outline: none;
 }
 
 .logo__first-word {
@@ -260,7 +269,6 @@
 
 /* контейнер герой*/
 .hero__conteiner {
-  min-width: 1200px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -796,6 +804,242 @@
 .regular-customers__icon--logo-6 {
   width: 89px;
   height: 46px;
+}
+
+/*подвал*/
+.footer {
+  background-color: #2F303A;
+}
+
+/*секция подвал*/
+.footer__section {
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+}
+
+/*контейнер подвала*/
+.footer__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+/*блок ссылок*/
+.footer__links-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 70px;
+}
+
+/*группа ссылок*/
+.footer__address {
+  padding: 0;
+  margin-top: 20px;
+}
+
+/*список ссылок*/
+.footer__address__list {
+  padding: 0;
+  list-style: none;
+}
+
+/*элемент списка ссылок*/
+.footer__address-contact {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+/*ссылка на гугл карту*/
+.footer__location-on-map {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__location-on-map:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/*ссылка на почту и телефон*/
+.footer__contact-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer__contact-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/*блок ссылок соцсетей*/
+.social {
+  margin: 72px 0 100px 0;
+}
+
+/*текст призыва*/
+.social__slogan {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*список иконок соцсетей*/
+.social__connect-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/*элементы списка*/
+.social__connect-item {
+  margin-right: 10px;
+}
+
+/*ссылка соцсети*/
+.social__connect-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__connect-link:focus, .social__connect-link:hover {
+  border-radius: 50%;
+  background-color: #2196F3;
+  outline: none;
+}
+
+/*иконка соцсети*/
+.social__connect-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/*блок подписания на рассылку*/
+.subscribe {
+  width: 570px;
+  height: 86px;
+  margin: 72px 0 94px 93px;
+}
+
+/*призыв*/
+.subscribe__slogan {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*форма подписания*/
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*поле ввода*/
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__input:focus {
+  border: 2px solid #2196F3;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+/*кнопка*/
+.subscribe__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 28px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*текст кнопки*/
+.subscribe__button-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+/*иконка кнопки*/
+.subscribe__button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /*Модальное окно*/

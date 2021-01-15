@@ -15,7 +15,18 @@
     /* identical to box height */
 
     letter-spacing: 0.03em;
+
+    &--footer {
+        color: $logo-footer-color;
+        
+        
+        &:focus{
+            text-decoration: underline;
+            outline: none;
+        }
+    }
 }
+
 .logo__first-word {
     color: $logo-accent-color;
 }
