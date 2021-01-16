@@ -1,0 +1,83 @@
+/*секция проекты*/
+.projects {
+    margin-top: 34px;
+}
+/*скрытый элемент*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*список проектов*/
+.projects__list {
+    font-family: $Roboto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+/*элемент списка пректов*/
+.projects__item {
+    flex-basis: calc(100% / 3 - 30px);
+    padding-left: 30px;
+    margin-top: 30px;
+}
+/*ссылка карточки проекта*/
+.projects__card-link {
+    &:focus {
+        display: block;
+        width: 370px;
+        height: 404px;  
+        outline: 2px solid black;
+        background: #FFFFFF;
+        /*border: 1px solid #EEEEEE;*/
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                    0px 4px 4px rgba(0, 0, 0, 0.06), 
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+/*карточка*/
+.card {
+}
+/*тумба карточки*/
+.card__thumb {
+}
+/*тумба*/
+.thumb {
+}
+/*текст тумбы*/
+.thumb__text {
+}
+/*подпись карточки*/
+.card__caption {
+    width: 322px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+/*шапка карточки*/
+.card__head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: $card-head;
+}
+/*подпись карточки*/
+.card__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    color: $card-text;
+}
