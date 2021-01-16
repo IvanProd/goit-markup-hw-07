@@ -1,0 +1,75 @@
+/*секция портфолто*/
+.portfolio {
+    box-sizing: border-box;
+    width: 1170px;
+    min-height: 1360px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+/*скрытие оглавления*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.portfolio__navigation-list {
+    width: 611px;
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+}
+.portfolio__navigation-item {
+    margin-right: 8px;
+}
+.portfoli__button {
+    background: $portfolio-button-bgcolor;
+    border: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    color: $portfolio-button-text-color;
+    font-family: $Roboto;
+    
+    min-height: 38px;
+
+    &:focus,&:hover {
+        background: $portfolio-button-bgcolor-active;
+        border: none;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        color: $portfolio-button-text-active-color;
+        outline: none;
+    
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                    0px 1px 2px rgba(0, 0, 0, 0.08), 
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.portfoli__button--all {
+}
+.portfoli__button--web-site {
+}
+.portfoli-__button {
+}
+.portfoli__button--application {
+}
+.portfoli__button--design {
+}
+.portfoli__button--marketing {
+}
