@@ -1620,6 +1620,10 @@ ul {
 }
 
 /*ссылка карточки проекта*/
+.projects__card-link {
+  text-decoration: none;
+}
+
 .projects__card-link:focus {
   display: block;
   width: 370px;

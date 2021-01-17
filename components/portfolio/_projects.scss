@@ -32,6 +32,8 @@
 }
 /*ссылка карточки проекта*/
 .projects__card-link {
+    text-decoration: none;
+
     &:focus {
         display: block;
         width: 370px;
