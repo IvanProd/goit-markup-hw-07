@@ -1388,7 +1388,7 @@ ul {
           transform: translateY(-50%);
   width: 16px;
   height: 15px;
-  background-image: url("../../images/icon-check.svg");
+  background-image: url(".././images/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
   background-color: #2196F3;
