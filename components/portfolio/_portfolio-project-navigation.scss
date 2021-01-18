@@ -1,16 +1,18 @@
 .main-content {
     box-sizing: border-box;
     max-width: 1600px;
-    padding: 0 215px 0;
+    /*padding: 0 215px 0;*/
     margin: 0 auto 0;
 }
 /*секция портфолто*/
 .portfolio-navigation {
     box-sizing: border-box;
-    width: 1170px;
+    max-width: 1200px;
     min-height: 1360px;
     margin-top: 94px;
     margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*скрытие оглавления*/
 .visually-hidden {
@@ -33,7 +35,9 @@
     list-style: none;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 4px;
+    margin-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
 }
 /*элемент списка навигации*/
